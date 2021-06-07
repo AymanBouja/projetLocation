@@ -1,0 +1,3520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="2.16"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkWindow" id="msg_window4">
+    <property name="width_request">200</property>
+    <property name="height_request">150</property>
+    <child>
+      <object class="GtkFixed" id="fixed12">
+        <property name="width_request">200</property>
+        <property name="height_request">150</property>
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkButton" id="submit5">
+            <property name="label" translatable="yes">button</property>
+            <property name="width_request">98</property>
+            <property name="height_request">43</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
+          </object>
+          <packing>
+            <property name="x">412</property>
+            <property name="y">265</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="MSG4">
+            <property name="width_request">150</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+          </object>
+          <packing>
+            <property name="x">182</property>
+            <property name="y">122</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label15">
+            <property name="width_request">208</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Veuillez saisir l'id de la voiture que  
+                   
+          vous voulez supprimer</property>
+          </object>
+          <packing>
+            <property name="x">155</property>
+            <property name="y">10</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="msg_window3">
+    <property name="width_request">200</property>
+    <property name="height_request">150</property>
+    <child>
+      <object class="GtkFixed" id="fixed11">
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkEntry" id="MSG3">
+            <property name="width_request">150</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+          </object>
+          <packing>
+            <property name="x">144</property>
+            <property name="y">111</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label14">
+            <property name="width_request">238</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Veuillez saisir l'id de la voiture que  
+                   
+           vous voulez modifier</property>
+          </object>
+          <packing>
+            <property name="x">102</property>
+            <property name="y">12</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="submit4">
+            <property name="label" translatable="yes">Submit</property>
+            <property name="width_request">93</property>
+            <property name="height_request">43</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
+          </object>
+          <packing>
+            <property name="x">350</property>
+            <property name="y">234</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="msg_window2">
+    <property name="width_request">200</property>
+    <property name="height_request">150</property>
+    <child>
+      <object class="GtkFixed" id="fixed10">
+        <property name="width_request">200</property>
+        <property name="height_request">150</property>
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkEntry" id="MSG2">
+            <property name="width_request">146</property>
+            <property name="height_request">39</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+          </object>
+          <packing>
+            <property name="x">150</property>
+            <property name="y">96</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label13">
+            <property name="width_request">324</property>
+            <property name="height_request">63</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Veuillez saisir l'id du client ayant la contrat que  
+                   
+                 vous voulez supprimer</property>
+          </object>
+          <packing>
+            <property name="x">71</property>
+            <property name="y">20</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="submit3">
+            <property name="label" translatable="yes">Submit</property>
+            <property name="width_request">100</property>
+            <property name="height_request">41</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
+          </object>
+          <packing>
+            <property name="x">340</property>
+            <property name="y">227</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="msg_window1">
+    <property name="width_request">200</property>
+    <property name="height_request">150</property>
+    <child>
+      <object class="GtkFixed" id="fixed9">
+        <property name="width_request">200</property>
+        <property name="height_request">150</property>
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkEntry" id="MSG1">
+            <property name="width_request">146</property>
+            <property name="height_request">39</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+          </object>
+          <packing>
+            <property name="x">154</property>
+            <property name="y">112</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label12">
+            <property name="width_request">309</property>
+            <property name="height_request">95</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Veuillez saisir l'id du client ayant la contrat que  
+                    
+                  vous voulez modifier</property>
+          </object>
+          <packing>
+            <property name="x">76</property>
+            <property name="y">5</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="submit2">
+            <property name="label" translatable="yes">submit</property>
+            <property name="width_request">99</property>
+            <property name="height_request">43</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
+          </object>
+          <packing>
+            <property name="x">341</property>
+            <property name="y">229</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="window_ajout_voiture">
+    <property name="width_request">550</property>
+    <property name="height_request">550</property>
+    <property name="resizable">False</property>
+    <child>
+      <object class="GtkFixed" id="fixed8">
+        <property name="width_request">550</property>
+        <property name="height_request">550</property>
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkEntry" id="add_idvv">
+            <property name="width_request">100</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+          </object>
+          <packing>
+            <property name="x">209</property>
+            <property name="y">71</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="add_m">
+            <property name="width_request">100</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">210</property>
+            <property name="y">137</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="add_nomv">
+            <property name="width_request">100</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">210</property>
+            <property name="y">199</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="add_color">
+            <property name="width_request">100</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">211</property>
+            <property name="y">268</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="add_nbp">
+            <property name="width_request">100</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">213</property>
+            <property name="y">338</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="add_pj">
+            <property name="width_request">100</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">213</property>
+            <property name="y">405</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="add_enloc">
+            <property name="width_request">100</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">212</property>
+            <property name="y">473</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="submit1">
+            <property name="label" translatable="yes">Submit</property>
+            <property name="width_request">95</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
+          </object>
+          <packing>
+            <property name="x">455</property>
+            <property name="y">515</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label5">
+            <property name="width_request">100</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Id voiture:</property>
+          </object>
+          <packing>
+            <property name="x">86</property>
+            <property name="y">71</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label6">
+            <property name="width_request">100</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Marque:</property>
+          </object>
+          <packing>
+            <property name="x">88</property>
+            <property name="y">135</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label7">
+            <property name="width_request">100</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Nom du voiture:</property>
+          </object>
+          <packing>
+            <property name="x">73</property>
+            <property name="y">199</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label8">
+            <property name="width_request">100</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Couleur:</property>
+          </object>
+          <packing>
+            <property name="x">89</property>
+            <property name="y">267</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label9">
+            <property name="width_request">100</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Nombre de places:</property>
+          </object>
+          <packing>
+            <property name="x">65</property>
+            <property name="y">337</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label10">
+            <property name="width_request">100</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Prix/Jour:</property>
+          </object>
+          <packing>
+            <property name="x">84</property>
+            <property name="y">404</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label11">
+            <property name="width_request">100</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">En location:</property>
+          </object>
+          <packing>
+            <property name="x">84</property>
+            <property name="y">471</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="window_liste_clients">
+    <property name="width_request">1500</property>
+    <property name="height_request">900</property>
+    <property name="resizable">False</property>
+    <child>
+      <object class="GtkFixed" id="fixed7">
+        <property name="width_request">1500</property>
+        <property name="height_request">900</property>
+        <property name="visible">True</property>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="window_liste_voitures">
+    <property name="width_request">1500</property>
+    <property name="height_request">900</property>
+    <property name="resizable">False</property>
+    <child>
+      <object class="GtkFixed" id="fixed6">
+        <property name="width_request">1500</property>
+        <property name="height_request">900</property>
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkEntry" id="idvv1">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+          </object>
+          <packing>
+            <property name="x">123</property>
+            <property name="y">88</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="idvv2">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+          </object>
+          <packing>
+            <property name="x">127</property>
+            <property name="y">166</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="idvv3">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">131</property>
+            <property name="y">248</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="idvv4">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">132</property>
+            <property name="y">328</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="idvv5">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">134</property>
+            <property name="y">404</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="idvv6">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">137</property>
+            <property name="y">479</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="idvv7">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">139</property>
+            <property name="y">551</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="idvv8">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">141</property>
+            <property name="y">619</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="idvv9">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">138</property>
+            <property name="y">695</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="idvv10">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">142</property>
+            <property name="y">776</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="m1">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">348</property>
+            <property name="y">89</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="m2">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">351</property>
+            <property name="y">166</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="m3">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">350</property>
+            <property name="y">248</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="m4">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">352</property>
+            <property name="y">332</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="m5">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">353</property>
+            <property name="y">403</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="m6">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">352</property>
+            <property name="y">468</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="m7">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">349</property>
+            <property name="y">546</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="m8">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">354</property>
+            <property name="y">620</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="m9">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">351</property>
+            <property name="y">692</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="m10">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">351</property>
+            <property name="y">775</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="nomv1">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">558</property>
+            <property name="y">88</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="nomv2">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">561</property>
+            <property name="y">167</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="nomv3">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">561</property>
+            <property name="y">246</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="nomv4">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">563</property>
+            <property name="y">331</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="nomv5">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">564</property>
+            <property name="y">402</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="nomv6">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">564</property>
+            <property name="y">469</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="nomv7">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">565</property>
+            <property name="y">544</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="nomv8">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">565</property>
+            <property name="y">618</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="nomv9">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">564</property>
+            <property name="y">692</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="nomv10">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">564</property>
+            <property name="y">773</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="color1">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">779</property>
+            <property name="y">87</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="color2">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">776</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="color3">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">773</property>
+            <property name="y">242</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="color4">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">777</property>
+            <property name="y">324</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="color5">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">774</property>
+            <property name="y">402</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="color6">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">769</property>
+            <property name="y">468</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="color7">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">770</property>
+            <property name="y">541</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="color8">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">768</property>
+            <property name="y">621</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="color9">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">766</property>
+            <property name="y">690</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="color10">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">764</property>
+            <property name="y">773</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="nbp1">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">991</property>
+            <property name="y">85</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="nbp2">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">993</property>
+            <property name="y">162</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="nbp3">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">995</property>
+            <property name="y">237</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="nbp4">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">996</property>
+            <property name="y">321</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="nbp5">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">995</property>
+            <property name="y">401</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="nbp6">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">996</property>
+            <property name="y">464</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="nbp7">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">996</property>
+            <property name="y">538</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="nbp8">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">992</property>
+            <property name="y">617</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="nbp9">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">993</property>
+            <property name="y">686</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="nbp10">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">995</property>
+            <property name="y">769</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="pj1">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1189</property>
+            <property name="y">85</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="pj2">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1190</property>
+            <property name="y">160</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="pj3">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1191</property>
+            <property name="y">236</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="pj4">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1194</property>
+            <property name="y">317</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="pj5">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1193</property>
+            <property name="y">396</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="pj6">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1196</property>
+            <property name="y">465</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="pj7">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1200</property>
+            <property name="y">537</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="pj8">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1197</property>
+            <property name="y">617</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="pj9">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1201</property>
+            <property name="y">686</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="pj10">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1201</property>
+            <property name="y">763</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="enloc1">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1359</property>
+            <property name="y">81</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="enloc2">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1360</property>
+            <property name="y">157</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="enloc3">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1361</property>
+            <property name="y">236</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="enloc4">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1360</property>
+            <property name="y">318</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="enloc5">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1361</property>
+            <property name="y">395</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="enloc6">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1364</property>
+            <property name="y">466</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="enloc7">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1365</property>
+            <property name="y">536</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="enloc8">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1367</property>
+            <property name="y">613</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="enloc9">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1372</property>
+            <property name="y">683</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="enloc10">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1371</property>
+            <property name="y">762</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="window_liste_contrats">
+    <property name="width_request">1550</property>
+    <property name="height_request">830</property>
+    <property name="resizable">False</property>
+    <child>
+      <object class="GtkFixed" id="fixed4">
+        <property name="width_request">1550</property>
+        <property name="height_request">830</property>
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkEntry" id="numC1">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+          </object>
+          <packing>
+            <property name="x">90</property>
+            <property name="y">90</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="idV1">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+          </object>
+          <packing>
+            <property name="x">290</property>
+            <property name="y">90</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="idC1">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+          </object>
+          <packing>
+            <property name="x">490</property>
+            <property name="y">90</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="jj_d1">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+          </object>
+          <packing>
+            <property name="x">690</property>
+            <property name="y">90</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="numC2">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+          </object>
+          <packing>
+            <property name="x">90</property>
+            <property name="y">160</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="jj_f1">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+          </object>
+          <packing>
+            <property name="x">890</property>
+            <property name="y">90</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="numC3">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+          </object>
+          <packing>
+            <property name="x">90</property>
+            <property name="y">230</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="numC5">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">90</property>
+            <property name="y">370</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="numC6">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">90</property>
+            <property name="y">440</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="numC4">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">90</property>
+            <property name="y">300</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="idC2">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+          </object>
+          <packing>
+            <property name="x">490</property>
+            <property name="y">160</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="idV6">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+          </object>
+          <packing>
+            <property name="x">290</property>
+            <property name="y">440</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="numC7">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">90</property>
+            <property name="y">510</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="idV4">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">290</property>
+            <property name="y">300</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="idV3">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">290</property>
+            <property name="y">230</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="idV2">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">290</property>
+            <property name="y">160</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="idC3">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">490</property>
+            <property name="y">230</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="idC7">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">490</property>
+            <property name="y">510</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="idV7">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">290</property>
+            <property name="y">510</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="idV5">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">290</property>
+            <property name="y">370</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="idC4">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">490</property>
+            <property name="y">300</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="idC6">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">490</property>
+            <property name="y">440</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="idC5">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">490</property>
+            <property name="y">370</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="jj_d4">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">690</property>
+            <property name="y">300</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="jj_d5">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">690</property>
+            <property name="y">370</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="jj_d3">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">690</property>
+            <property name="y">230</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="numC8">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">90</property>
+            <property name="y">580</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="idV8">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">290</property>
+            <property name="y">650</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="idC8">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">490</property>
+            <property name="y">580</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="jj_d7">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">690</property>
+            <property name="y">510</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="jj_d8">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">690</property>
+            <property name="y">580</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="jj_d6">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">690</property>
+            <property name="y">440</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="jj_f4">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">890</property>
+            <property name="y">300</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="jj_f3">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">890</property>
+            <property name="y">230</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="jj_f5">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">890</property>
+            <property name="y">370</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="jj_f2">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">890</property>
+            <property name="y">160</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="jj_d2">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">690</property>
+            <property name="y">160</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="numC9">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">90</property>
+            <property name="y">650</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="jj_f7">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">890</property>
+            <property name="y">510</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="jj_f6">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">890</property>
+            <property name="y">440</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="jj_f8">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">890</property>
+            <property name="y">580</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="jj_f9">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">890</property>
+            <property name="y">650</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="jj_d9">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">690</property>
+            <property name="y">650</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="idC9">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">490</property>
+            <property name="y">650</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="idV9">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">290</property>
+            <property name="y">580</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="numC10">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">90</property>
+            <property name="y">720</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="idV10">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">290</property>
+            <property name="y">720</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="jj_d10">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">690</property>
+            <property name="y">720</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="idC10">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">490</property>
+            <property name="y">720</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="jj_f10">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">890</property>
+            <property name="y">720</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="cout1">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1090</property>
+            <property name="y">90</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="cout2">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1090</property>
+            <property name="y">160</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="cout4">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1090</property>
+            <property name="y">300</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="cout3">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1090</property>
+            <property name="y">230</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="cout10">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1090</property>
+            <property name="y">720</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="cout5">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1090</property>
+            <property name="y">370</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="cout6">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1090</property>
+            <property name="y">440</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="cout9">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1090</property>
+            <property name="y">650</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="cout8">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1090</property>
+            <property name="y">580</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="cout7">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1090</property>
+            <property name="y">510</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="mm_d1">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">747</property>
+            <property name="y">91</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="mm_d2">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">749</property>
+            <property name="y">158</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="mm_d3">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">754</property>
+            <property name="y">230</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="mm_d4">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">753</property>
+            <property name="y">298</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="mm_d5">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">749</property>
+            <property name="y">369</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="mm_d6">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">749</property>
+            <property name="y">440</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="mm_d7">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">751</property>
+            <property name="y">509</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="mm_d8">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">750</property>
+            <property name="y">579</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="mm_d9">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">748</property>
+            <property name="y">650</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="mm_d10">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">753</property>
+            <property name="y">719</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="aa_d1">
+            <property name="width_request">70</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">805</property>
+            <property name="y">90</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="aa_d2">
+            <property name="width_request">70</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">810</property>
+            <property name="y">157</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="aa_d3">
+            <property name="width_request">70</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">811</property>
+            <property name="y">229</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="aa_d4">
+            <property name="width_request">70</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">809</property>
+            <property name="y">298</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="aa_d5">
+            <property name="width_request">70</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">806</property>
+            <property name="y">369</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="aa_d6">
+            <property name="width_request">70</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">807</property>
+            <property name="y">439</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="aa_d7">
+            <property name="width_request">70</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">812</property>
+            <property name="y">509</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="aa_d8">
+            <property name="width_request">70</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">811</property>
+            <property name="y">577</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="aa_d9">
+            <property name="width_request">70</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">810</property>
+            <property name="y">649</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="aa_d10">
+            <property name="width_request">70</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">811</property>
+            <property name="y">721</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="mm_f1">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">945</property>
+            <property name="y">89</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="mm_f2">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">947</property>
+            <property name="y">159</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="mm_f3">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">950</property>
+            <property name="y">225</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="mm_f4">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">947</property>
+            <property name="y">300</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="mm_f5">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">946</property>
+            <property name="y">366</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="mm_f6">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">951</property>
+            <property name="y">440</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="mm_f7">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">950</property>
+            <property name="y">507</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="mm_f8">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">948</property>
+            <property name="y">580</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="mm_f9">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">948</property>
+            <property name="y">650</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="mm_f10">
+            <property name="width_request">50</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">949</property>
+            <property name="y">719</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="aa_f1">
+            <property name="width_request">70</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1004</property>
+            <property name="y">88</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="aa_f2">
+            <property name="width_request">70</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1001</property>
+            <property name="y">158</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="aa_f3">
+            <property name="width_request">70</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1003</property>
+            <property name="y">226</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="aa_f4">
+            <property name="width_request">70</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1000</property>
+            <property name="y">300</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="aa_f5">
+            <property name="width_request">70</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1003</property>
+            <property name="y">366</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="aa_f6">
+            <property name="width_request">70</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1004</property>
+            <property name="y">438</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="aa_f7">
+            <property name="width_request">70</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1006</property>
+            <property name="y">503</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="aa_f8">
+            <property name="width_request">70</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1005</property>
+            <property name="y">580</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="aa_f9">
+            <property name="width_request">70</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1002</property>
+            <property name="y">648</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="aa_f10">
+            <property name="width_request">70</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">1005</property>
+            <property name="y">719</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="Window_MenuPrincipale">
+    <property name="width_request">500</property>
+    <property name="height_request">300</property>
+    <property name="resizable">False</property>
+    <child>
+      <object class="GtkFixed" id="menu_window">
+        <property name="width_request">500</property>
+        <property name="height_request">300</property>
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkButton" id="button_location">
+            <property name="label" translatable="yes">Location</property>
+            <property name="width_request">194</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+          </object>
+          <packing>
+            <property name="x">146</property>
+            <property name="y">76</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_gestion_voitures">
+            <property name="label" translatable="yes">Gestion Voitures</property>
+            <property name="width_request">194</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+          </object>
+          <packing>
+            <property name="x">145</property>
+            <property name="y">121</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_gestion_clients">
+            <property name="label" translatable="yes">Gestion Clients</property>
+            <property name="width_request">194</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+          </object>
+          <packing>
+            <property name="x">145</property>
+            <property name="y">169</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="Exit1">
+            <property name="label" translatable="yes">Quitter</property>
+            <property name="width_request">85</property>
+            <property name="height_request">36</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+          </object>
+          <packing>
+            <property name="x">415</property>
+            <property name="y">264</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label1">
+            <property name="width_request">165</property>
+            <property name="height_request">44</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Menu principale</property>
+          </object>
+          <packing>
+            <property name="x">160</property>
+            <property name="y">14</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="Window_MenuLocation">
+    <property name="width_request">500</property>
+    <property name="height_request">300</property>
+    <property name="resizable">False</property>
+    <child>
+      <object class="GtkFixed" id="fixed1">
+        <property name="width_request">500</property>
+        <property name="height_request">300</property>
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkLabel" id="label2">
+            <property name="width_request">156</property>
+            <property name="height_request">46</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Location d'une voiture</property>
+          </object>
+          <packing>
+            <property name="x">161</property>
+            <property name="y">17</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="Visualiser_contrat">
+            <property name="label" translatable="yes">Visualiser contrat</property>
+            <property name="width_request">194</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
+          </object>
+          <packing>
+            <property name="x">141</property>
+            <property name="y">76</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="Louer_voiture">
+            <property name="label" translatable="yes">Louer voiture</property>
+            <property name="width_request">194</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
+          </object>
+          <packing>
+            <property name="x">141</property>
+            <property name="y">116</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="Retourner_voiture">
+            <property name="label" translatable="yes">Retourner voiture</property>
+            <property name="width_request">194</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
+          </object>
+          <packing>
+            <property name="x">141</property>
+            <property name="y">153</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="Modifier_contrat">
+            <property name="label" translatable="yes">Modifier contrat</property>
+            <property name="width_request">194</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
+          </object>
+          <packing>
+            <property name="x">141</property>
+            <property name="y">193</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="Exit2">
+            <property name="label" translatable="yes">Retour</property>
+            <property name="width_request">99</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
+          </object>
+          <packing>
+            <property name="x">401</property>
+            <property name="y">305</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="Supprimer_contrat">
+            <property name="label" translatable="yes">Supprimer contrat</property>
+            <property name="width_request">194</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
+          </object>
+          <packing>
+            <property name="x">141</property>
+            <property name="y">232</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="Window_GestionVoiture">
+    <property name="width_request">500</property>
+    <property name="height_request">300</property>
+    <property name="resizable">False</property>
+    <property name="default_width">440</property>
+    <property name="default_height">250</property>
+    <child>
+      <object class="GtkFixed" id="fixed2">
+        <property name="width_request">500</property>
+        <property name="height_request">300</property>
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkLabel" id="label3">
+            <property name="width_request">172</property>
+            <property name="height_request">45</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Gestion des voitures</property>
+          </object>
+          <packing>
+            <property name="x">164</property>
+            <property name="y">14</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="Liste_voitures">
+            <property name="label" translatable="yes">Liste des voitures</property>
+            <property name="width_request">194</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
+          </object>
+          <packing>
+            <property name="x">152</property>
+            <property name="y">71</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="Ajouter_voiture">
+            <property name="label" translatable="yes">Ajouter voiture</property>
+            <property name="width_request">194</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
+          </object>
+          <packing>
+            <property name="x">153</property>
+            <property name="y">114</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="Modifier_voiture">
+            <property name="label" translatable="yes">Modifier voiture</property>
+            <property name="width_request">194</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
+          </object>
+          <packing>
+            <property name="x">153</property>
+            <property name="y">156</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="Supprimer_voiture">
+            <property name="label" translatable="yes">Supprimer Voiture</property>
+            <property name="width_request">194</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
+          </object>
+          <packing>
+            <property name="x">153</property>
+            <property name="y">200</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="Exit3">
+            <property name="label" translatable="yes">Retour</property>
+            <property name="width_request">100</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
+          </object>
+          <packing>
+            <property name="x">400</property>
+            <property name="y">260</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="Window_GestionClients">
+    <property name="width_request">500</property>
+    <property name="height_request">340</property>
+    <property name="resizable">False</property>
+    <child>
+      <object class="GtkFixed" id="fixed3">
+        <property name="width_request">500</property>
+        <property name="height_request">340</property>
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkLabel" id="label4">
+            <property name="width_request">139</property>
+            <property name="height_request">50</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Gestion des clients</property>
+          </object>
+          <packing>
+            <property name="x">178</property>
+            <property name="y">15</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="Liste_desClients">
+            <property name="label" translatable="yes">Liste des clients</property>
+            <property name="width_request">220</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
+          </object>
+          <packing>
+            <property name="x">137</property>
+            <property name="y">83</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="Ajouter_client">
+            <property name="label" translatable="yes">Ajouter client</property>
+            <property name="width_request">220</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
+          </object>
+          <packing>
+            <property name="x">137</property>
+            <property name="y">127</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="Modifier_client">
+            <property name="label" translatable="yes">Modifier client</property>
+            <property name="width_request">220</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
+          </object>
+          <packing>
+            <property name="x">137</property>
+            <property name="y">171</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="Supprimer_client">
+            <property name="label" translatable="yes">Supprimer client</property>
+            <property name="width_request">220</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
+          </object>
+          <packing>
+            <property name="x">136</property>
+            <property name="y">215</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="exit4">
+            <property name="label" translatable="yes">Retour</property>
+            <property name="width_request">100</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
+          </object>
+          <packing>
+            <property name="x">427</property>
+            <property name="y">301</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="window_ajout_contrat">
+    <property name="width_request">400</property>
+    <property name="height_request">350</property>
+    <child>
+      <object class="GtkFixed" id="fixed5">
+        <property name="width_request">400</property>
+        <property name="height_request">350</property>
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkEntry" id="add_numC">
+            <property name="width_request">150</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+          </object>
+          <packing>
+            <property name="x">122</property>
+            <property name="y">35</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="add_idV">
+            <property name="width_request">150</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">123</property>
+            <property name="y">81</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="add_aa_d">
+            <property name="width_request">60</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">232</property>
+            <property name="y">172</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="add_jj_d">
+            <property name="width_request">50</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">125</property>
+            <property name="y">172</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="add_mm_d">
+            <property name="width_request">50</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">178</property>
+            <property name="y">172</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="add_cout">
+            <property name="width_request">150</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">123</property>
+            <property name="y">257</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="add_jj_f">
+            <property name="width_request">50</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">123</property>
+            <property name="y">213</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="add_mm_f">
+            <property name="width_request">50</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">178</property>
+            <property name="y">212</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="add_aa_f">
+            <property name="width_request">60</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">233</property>
+            <property name="y">212</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="add_idC">
+            <property name="width_request">150</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+          </object>
+          <packing>
+            <property name="x">123</property>
+            <property name="y">125</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="submit">
+            <property name="label" translatable="yes">Submit</property>
+            <property name="width_request">92</property>
+            <property name="height_request">32</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
+          </object>
+          <packing>
+            <property name="x">348</property>
+            <property name="y">318</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
