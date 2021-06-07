@@ -11,35 +11,32 @@
 void Window_location(GtkWidget * ,gpointer );
 void Window_gestion_voitures(GtkWidget * ,gpointer );
 void Window_gestion_clients(GtkWidget * ,gpointer );
-//void Quitter();
+
 
 //Fonction liees au signaux des bouttons du menu gestion location
 
 void afficher_listes_contrats(void );
-void add_in_contract_list(void );
+void add_contract(void );
 void load_contract(void );
 void load_voitures(void );
 
 void save_contract(void );
-/*void Lou_voit(FILE*);
-void Ret_voit(FILE*);
-void Modif_cont(FILE*);
-void Supp_cont(FILE*);*/
+void save_voitures(void );
 
 //Fonction liees au signaux des bouttons du menu gestion des voitures
 
-void Aff_list_voit(FILE*);
-void Ajout_voit(FILE*);
-void Modif_voit(FILE*);
-void Supp_voit(FILE*);
+void Aff_list_voit(void);
+void Ajout_voit(void);
+void Modif_voit(void);
+void Supp_voit(void);
 
 //Fonction liees au signaux des bouttons du menu gestion des clients
 
-void aff_list_cl(FILE*);
+void aff_list_cl();
 void Ajout_cl(FILE*);
 void Modif_cl(FILE*);
 void Supp_client(FILE*);
-*/
+
 
 //Main project functions(pointeur vers les fonctions si possible)
 
@@ -104,8 +101,9 @@ int telephone;
 
 GtkBuilder *projet;
 GtkWidget *window_ajout_contrat;
-GtkWidget *window_list_contrat;
+GtkWidget *window_list_contrats;
 GtkWidget *window_liste_voitures;
+GtkWidget *window_ajout_voiture;
 //declaration des entrees:
 //pour la location:
 
@@ -204,7 +202,10 @@ void Window_location(GtkWidget *widget ,gpointer data )
 
 
   g_signal_connect(button_visual_contrat, "clicked" , G_CALLBACK(afficher_listes_contrats) , NULL);
-  g_signal_connect(button_louer, "clicked", G_CALLBACK(add_in_contract_list), NULL)
+  g_signal_connect(button_louer, "clicked", G_CALLBACK(add_contract), NULL);
+  g_signal_connect(button_retour_voiture, "clicked", G_CALLBACK(return_voit), NULL);
+  g_signal_connect(button_modif_contrat, "clicked", G_CALLBACK(modify_contract), NULL);
+  g_signal_connect(button_supp_client, "clicked", G_CALLBACK(delete_contract), NULL)
   g_signal_connect(button_exit2,"clicked", G_CALLBACK(main) , NULL);
   g_signal_connect(button_exit2,"clicked", G_CALLBACK(gtk_widget_destroy) , windowLoc);
 
@@ -267,7 +268,7 @@ void afficher_listes_contrats(){
 
 
 projet=             GTK_WIDGET(gtk_builder_new_from_file("C:\\Users\\hp\\Desktop\\All_Windows.glade"));
-window_list_contrat=GTK_WIDGET(gtk_builder_get_object(projet, "window_liste_contrats"));
+window_list_contrats=GTK_WIDGET(gtk_builder_get_object(projet, "window_liste_contrats"));
 
 numC1=              GTK_WIDGET(gtk_builder_get_object(projet, "numC1"));
 numC2=              GTK_WIDGET(gtk_builder_get_object(projet, "numC2"));
@@ -379,7 +380,7 @@ cout8=              GTK_WIDGET(gtk_builder_get_object(projet, "cout8"));
 cout9=              GTK_WIDGET(gtk_builder_get_object(projet, "cout9"));
 cout10=             GTK_WIDGET(gtk_builder_get_object(projet, "cout10"));
 
-gtk_widget_show_all(window_list_contrat);
+gtk_widget_show_all(window_list_contrats);
 
 }
 void load_contract(){
@@ -392,7 +393,7 @@ strcpy(TabContrat[4].numContrat,gtk_entry_get_text(numC5));
 strcpy(TabContrat[5].numContrat,gtk_entry_get_text(numC6));
 strcpy(TabContrat[6].numContrat,gtk_entry_get_text(numC7));
 strcpy(TabContrat[7].numContrat,gtk_entry_get_text(numC8));
-strcpy(TabContrat[8].numContrat,gtk_entry_get_text(numC6));
+strcpy(TabContrat[8].numContrat,gtk_entry_get_text(numC9));
 strcpy(TabContrat[9].numContrat,gtk_entry_get_text(numC10));
 
 //copie du id voiture
@@ -404,7 +405,7 @@ strcpy(TabContrat[4].idVoiture,gtk_entry_get_text(idV5));
 strcpy(TabContrat[5].idVoiture,gtk_entry_get_text(idV6));
 strcpy(TabContrat[6].idVoiture,gtk_entry_get_text(idV7));
 strcpy(TabContrat[7].idVoiture,gtk_entry_get_text(idV8));
-strcpy(TabContrat[8].idVoiture,gtk_entry_get_text(idV6));
+strcpy(TabContrat[8].idVoiture,gtk_entry_get_text(idv9));
 strcpy(TabContrat[9].idVoiture,gtk_entry_get_text(idV10));
 
 //copie du id client
@@ -416,7 +417,7 @@ strcpy(TabContrat[4].idClient,gtk_entry_get_text(idC5));
 strcpy(TabContrat[5].idClient,gtk_entry_get_text(idC6));
 strcpy(TabContrat[6].idClient,gtk_entry_get_text(idC7));
 strcpy(TabContrat[7].idClient,gtk_entry_get_text(idC8));
-strcpy(TabContrat[8].idClient,gtk_entry_get_text(idC6));
+strcpy(TabContrat[8].idClient,gtk_entry_get_text(idC9));
 strcpy(TabContrat[9].idClient,gtk_entry_get_text(idC10));
 
 //copie Date debut
@@ -429,7 +430,7 @@ strcpy(TabContrat[4].debut->jj,gtk_entry_get_text(jj_d5));
 strcpy(TabContrat[5].debut->jj,gtk_entry_get_text(jj_d6));
 strcpy(TabContrat[6].debut->jj,gtk_entry_get_text(jj_d7));
 strcpy(TabContrat[7].debut->jj,gtk_entry_get_text(jj_d8));
-strcpy(TabContrat[8].debut->jj,gtk_entry_get_text(jj_d6));
+strcpy(TabContrat[8].debut->jj,gtk_entry_get_text(jj_d9));
 strcpy(TabContrat[9].debut->jj,gtk_entry_get_text(jj_d10));
 //mm
 strcpy(TabContrat[0].debut->mm,gtk_entry_get_text(mm_d1));
@@ -440,7 +441,7 @@ strcpy(TabContrat[4].debut->mm,gtk_entry_get_text(mm_d5));
 strcpy(TabContrat[5].debut->mm,gtk_entry_get_text(mm_d6));
 strcpy(TabContrat[6].debut->mm,gtk_entry_get_text(mm_d7));
 strcpy(TabContrat[7].debut->mm,gtk_entry_get_text(mm_d8));
-strcpy(TabContrat[8].debut->mm,gtk_entry_get_text(mm_d6));
+strcpy(TabContrat[8].debut->mm,gtk_entry_get_text(mm_d9));
 strcpy(TabContrat[9].debut->mm,gtk_entry_get_text(mm_d10));
 //aa
 strcpy(TabContrat[0].debut->aa,gtk_entry_get_text(aa_d1));
@@ -451,7 +452,7 @@ strcpy(TabContrat[4].debut->aa,gtk_entry_get_text(aa_d5));
 strcpy(TabContrat[5].debut->aa,gtk_entry_get_text(aa_d6));
 strcpy(TabContrat[6].debut->aa,gtk_entry_get_text(aa_d7));
 strcpy(TabContrat[7].debut->aa,gtk_entry_get_text(aa_d8));
-strcpy(TabContrat[8].debut->aa,gtk_entry_get_text(aa_d6));
+strcpy(TabContrat[8].debut->aa,gtk_entry_get_text(aa_d9));
 strcpy(TabContrat[9].debut->aa,gtk_entry_get_text(aa_d10));
 
 //copie date fin
@@ -464,7 +465,7 @@ strcpy(TabContrat[4].fin->jj,gtk_entry_get_text(jj_f5));
 strcpy(TabContrat[5].fin->jj,gtk_entry_get_text(jj_f6));
 strcpy(TabContrat[6].fin->jj,gtk_entry_get_text(jj_f7));
 strcpy(TabContrat[7].fin->jj,gtk_entry_get_text(jj_f8));
-strcpy(TabContrat[8].fin->jj,gtk_entry_get_text(jj_f6));
+strcpy(TabContrat[8].fin->jj,gtk_entry_get_text(jj_f9));
 strcpy(TabContrat[9].fin->jj,gtk_entry_get_text(jj_f10));
 //mm
 strcpy(TabContrat[0].fin->mm,gtk_entry_get_text(mm_f1));
@@ -475,7 +476,7 @@ strcpy(TabContrat[4].fin->mm,gtk_entry_get_text(mm_f5));
 strcpy(TabContrat[5].fin->mm,gtk_entry_get_text(mm_f6));
 strcpy(TabContrat[6].fin->mm,gtk_entry_get_text(mm_f7));
 strcpy(TabContrat[7].fin->mm,gtk_entry_get_text(mm_f8));
-strcpy(TabContrat[8].fin->mm,gtk_entry_get_text(mm_f6));
+strcpy(TabContrat[8].fin->mm,gtk_entry_get_text(mm_f9));
 strcpy(TabContrat[9].fin->mm,gtk_entry_get_text(mm_f10));
 //aa
 strcpy(TabContrat[0].fin->aa,gtk_entry_get_text(aa_f1));
@@ -486,7 +487,7 @@ strcpy(TabContrat[4].fin->aa,gtk_entry_get_text(aa_f5));
 strcpy(TabContrat[5].fin->aa,gtk_entry_get_text(aa_f6));
 strcpy(TabContrat[6].fin->aa,gtk_entry_get_text(aa_f7));
 strcpy(TabContrat[7].fin->aa,gtk_entry_get_text(aa_f8));
-strcpy(TabContrat[8].fin->aa,gtk_entry_get_text(aa_f6));
+strcpy(TabContrat[8].fin->aa,gtk_entry_get_text(aa_f9));
 strcpy(TabContrat[9].fin->aa,gtk_entry_get_text(aa_f10));
 
 //copie cout
@@ -498,7 +499,7 @@ strcpy(TabContrat[4].cout,gtk_entry_get_text(cout5));
 strcpy(TabContrat[5].cout,gtk_entry_get_text(cout6));
 strcpy(TabContrat[6].cout,gtk_entry_get_text(cout7));
 strcpy(TabContrat[7].cout,gtk_entry_get_text(cout8));
-strcpy(TabContrat[8].cout,gtk_entry_get_text(cout6));
+strcpy(TabContrat[8].cout,gtk_entry_get_text(cout9));
 strcpy(TabContrat[9].cout,gtk_entry_get_text(cout10));
 
 
@@ -634,8 +635,8 @@ void add_contract(){
   submit=              GTK_WIDGET(gtk_builder_get_object(projet, "submit"));
 
   gtk_widget_show_all(window_ajout_contrat);
-  
-  load();
+
+  load_contract();
   for(i=0;i<10;i++){
 
 
@@ -653,24 +654,36 @@ void add_contract(){
       break;
 
     }
+
   for(i=0;i<10;i++){
     if(TabContrat[i].idVoiture==gtk_entry_get_text(add_idV))
       gtk_entry_set_text(add_idV, "voiture deja utilisée");
       strcpy(TabContrat[i].idVoiture,gtk_entry_get_text(add_idV));
   }
   }
-  save();
-  afficher_listes_contrats();
+
+  save_contract();
 
 
 }
 
 // veuillez saisir l'id de l utilisateur que vois voulez ajouter: if(id existe deja); break; le client existe deja-- else continue;
-void modify_contract{
+void modify_contract(){
+
+  GtkWidget *msg_window;
+  projet=GTK_WIDGET(gtk_builder_new_from_file("C:\\Users\\hp\\Desktop\\All_Windows.glade"));
+  msg_window=GTK_WIDGET(gtk_builder_get_object(projet, "msg_window"));
+  
+
+
+
 
 }
 
-void delete_contract{
+void delete_contract(){
+
+
+
 
 }
 
@@ -680,16 +693,16 @@ projet=              GTK_WIDGET(gtk_builder_new_from_file("C:\\Users\\hp\\Deskto
 window_liste_voitures=GTK_WIDGET(gtk_builder_get_object(projet, "window_liste_voitures"));
 
 
-idv1=              GTK_WIDGET(gtk_builder_get_object(projet, "idv1"));
-idv2=              GTK_WIDGET(gtk_builder_get_object(projet, "idv2"));
-idv3=              GTK_WIDGET(gtk_builder_get_object(projet, "idv3"));
-idv4=              GTK_WIDGET(gtk_builder_get_object(projet, "idv4"));
-idv5=              GTK_WIDGET(gtk_builder_get_object(projet, "idv5"));
-idv6=              GTK_WIDGET(gtk_builder_get_object(projet, "idv6"));
-idv7=              GTK_WIDGET(gtk_builder_get_object(projet, "idv7"));
-idv8=              GTK_WIDGET(gtk_builder_get_object(projet, "idv8"));
-idv9=              GTK_WIDGET(gtk_builder_get_object(projet, "idv9"));
-idv10=             GTK_WIDGET(gtk_builder_get_object(projet, "idv10"));
+idvv1=              GTK_WIDGET(gtk_builder_get_object(projet, "idv1"));
+idvv2=              GTK_WIDGET(gtk_builder_get_object(projet, "idv2"));
+idvv3=              GTK_WIDGET(gtk_builder_get_object(projet, "idv3"));
+idvv4=              GTK_WIDGET(gtk_builder_get_object(projet, "idv4"));
+idvv5=              GTK_WIDGET(gtk_builder_get_object(projet, "idv5"));
+idvv6=              GTK_WIDGET(gtk_builder_get_object(projet, "idv6"));
+idvv7=              GTK_WIDGET(gtk_builder_get_object(projet, "idv7"));
+idvv8=              GTK_WIDGET(gtk_builder_get_object(projet, "idv8"));
+idvv9=              GTK_WIDGET(gtk_builder_get_object(projet, "idv9"));
+idvv10=             GTK_WIDGET(gtk_builder_get_object(projet, "idv10"));
 
 m1=              GTK_WIDGET(gtk_builder_get_object(projet, "m1"));
 m2=              GTK_WIDGET(gtk_builder_get_object(projet, "m2"));
@@ -773,7 +786,7 @@ strcpy(TabVoiture[4].idVoiture,gtk_entry_get_text(idvv5));
 strcpy(TabVoiture[5].idVoiture,gtk_entry_get_text(idvv6));
 strcpy(TabVoiture[6].idVoiture,gtk_entry_get_text(idvv7));
 strcpy(TabVoiture[7].idVoiture,gtk_entry_get_text(idvv8));
-strcpy(TabVoiture[8].idVoiture,gtk_entry_get_text(idvv6));
+strcpy(TabVoiture[8].idVoiture,gtk_entry_get_text(idvv9));
 strcpy(TabVoiture[9].idVoiture,gtk_entry_get_text(idvv10));
 
 strcpy(TabVoiture[0].marque,gtk_entry_get_text(m1));
@@ -784,7 +797,7 @@ strcpy(TabVoiture[4].marque,gtk_entry_get_text(m5));
 strcpy(TabVoiture[5].marque,gtk_entry_get_text(m6));
 strcpy(TabVoiture[6].marque,gtk_entry_get_text(m7));
 strcpy(TabVoiture[7].marque,gtk_entry_get_text(m8));
-strcpy(TabVoiture[8].marque,gtk_entry_get_text(m6));
+strcpy(TabVoiture[8].marque,gtk_entry_get_text(m9));
 strcpy(TabVoiture[9].marque,gtk_entry_get_text(m10));
 
 strcpy(TabVoiture[0].nomVoiture,gtk_entry_get_text(nomv1));
@@ -795,7 +808,7 @@ strcpy(TabVoiture[4].nomVoiture,gtk_entry_get_text(nomv5));
 strcpy(TabVoiture[5].nomVoiture,gtk_entry_get_text(nomv6));
 strcpy(TabVoiture[6].nomVoiture,gtk_entry_get_text(nomv7));
 strcpy(TabVoiture[7].nomVoiture,gtk_entry_get_text(nomv8));
-strcpy(TabVoiture[8].nomVoiture,gtk_entry_get_text(nomv6));
+strcpy(TabVoiture[8].nomVoiture,gtk_entry_get_text(nomv9));
 strcpy(TabVoiture[9].nomVoiture,gtk_entry_get_text(nomv10));
 
 strcpy(TabVoiture[0].couleur,gtk_entry_get_text(color1));
@@ -806,7 +819,7 @@ strcpy(TabVoiture[4].couleur,gtk_entry_get_text(color5));
 strcpy(TabVoiture[5].couleur,gtk_entry_get_text(color6));
 strcpy(TabVoiture[6].couleur,gtk_entry_get_text(color7));
 strcpy(TabVoiture[7].couleur,gtk_entry_get_text(color8));
-strcpy(TabVoiture[8].couleur,gtk_entry_get_text(color6));
+strcpy(TabVoiture[8].couleur,gtk_entry_get_text(color9));
 strcpy(TabVoiture[9].couleur,gtk_entry_get_text(color10));
 
 strcpy(TabVoiture[0].nbplaces,gtk_entry_get_text(nbp1));
@@ -817,7 +830,7 @@ strcpy(TabVoiture[4].nbplaces,gtk_entry_get_text(nbp5));
 strcpy(TabVoiture[5].nbplaces,gtk_entry_get_text(nbp6));
 strcpy(TabVoiture[6].nbplaces,gtk_entry_get_text(nbp7));
 strcpy(TabVoiture[7].nbplaces,gtk_entry_get_text(nbp8));
-strcpy(TabVoiture[8].nbplaces,gtk_entry_get_text(nbp6));
+strcpy(TabVoiture[8].nbplaces,gtk_entry_get_text(nbp9));
 strcpy(TabVoiture[9].nbplaces,gtk_entry_get_text(nbp10));
 
 strcpy(TabVoiture[0].prixJour,gtk_entry_get_text(pj1));
@@ -828,7 +841,7 @@ strcpy(TabVoiture[4].prixJour,gtk_entry_get_text(pj5));
 strcpy(TabVoiture[5].prixJour,gtk_entry_get_text(pj6));
 strcpy(TabVoiture[6].prixJour,gtk_entry_get_text(pj7));
 strcpy(TabVoiture[7].prixJour,gtk_entry_get_text(pj8));
-strcpy(TabVoiture[8].prixJour,gtk_entry_get_text(pj6));
+strcpy(TabVoiture[8].prixJour,gtk_entry_get_text(pj9));
 strcpy(TabVoiture[9].prixJour,gtk_entry_get_text(pj10));
 
 strcpy(TabVoiture[0].EnLocation,gtk_entry_get_text(enloc1));
@@ -839,7 +852,7 @@ strcpy(TabVoiture[4].EnLocation,gtk_entry_get_text(enloc5));
 strcpy(TabVoiture[5].EnLocation,gtk_entry_get_text(enloc6));
 strcpy(TabVoiture[6].EnLocation,gtk_entry_get_text(enloc7));
 strcpy(TabVoiture[7].EnLocation,gtk_entry_get_text(enloc8));
-strcpy(TabVoiture[8].EnLocation,gtk_entry_get_text(enloc6));
+strcpy(TabVoiture[8].EnLocation,gtk_entry_get_text(enloc9));
 strcpy(TabVoiture[9].EnLocation,gtk_entry_get_text(enloc10));
 
 }
@@ -929,11 +942,105 @@ void save_voitures(){
 }
 
 void add_voit(){
+  GtkWidget *submit1;
+  int i;
+
+  projet=              GTK_WIDGET(gtk_builder_new_from_file("C:\\Users\\hp\\Desktop\\All_Windows.glade"));
+  window_ajout_voiture=       GTK_WIDGET(gtk_builder_get_object(projet, "window_ajout_voiture"));
+
+  add_idvv=             GTK_WIDGET(gtk_builder_get_object(projet, "add_idvv"));
+  add_m=                GTK_WIDGET(gtk_builder_get_object(projet, "add_m"));
+  add_nomv=             GTK_WIDGET(gtk_builder_get_object(projet, "add_nomv"));
+  add_color=            GTK_WIDGET(gtk_builder_get_object(projet, "add_color"));
+  add_nbp=              GTK_WIDGET(gtk_builder_get_object(projet, "add_nbp"));
+  add_pj=               GTK_WIDGET(gtk_builder_get_object(projet, "add_pj"));
+  add_enloc=            GTK_WIDGET(gtk_builder_get_object(projet, "add_enloc"));
+  label5=            GTK_WIDGET(gtk_builder_get_object(projet, "label5"));
+  label6=            GTK_WIDGET(gtk_builder_get_object(projet, "label6"));
+  label7=            GTK_WIDGET(gtk_builder_get_object(projet, "label7"));
+  label8=            GTK_WIDGET(gtk_builder_get_object(projet, "label8"));
+  label9=            GTK_WIDGET(gtk_builder_get_object(projet, "label9"));
+  label10=            GTK_WIDGET(gtk_builder_get_object(projet, "label10"));
+  label11=            GTK_WIDGET(gtk_builder_get_object(projet, "label11"));
+  submit1=              GTK_WIDGET(gtk_builder_get_object(projet, "submit2"));
+  gtk_widget_show_all(window_ajout_voiture);
+  g_signal_connect(submit1,"clicked", G_CALLBACK(main) , NULL);
+  g_signal_connect(submit1,"clicked", G_CALLBACK(gtk_widget_destroy) , window_ajout_voiture);
+  load_voitures();
+  for(i=0;i<10;i++){
+
+
+    if(TabVoiture[i].idVoiture==""){
+      strcpy(TabVoiture[i].idVoiture,gtk_entry_get_text(add_idvv));
+      strcpy(TabVoiture[i].marque,gtk_entry_get_text(add_m));
+      strcpy(TabVoiture[i].nomVoiture,gtk_entry_get_text(add_nomv));
+      strcpy(TabVoiture[i].couleur,gtk_entry_get_text(add_color));
+      strcpy(TabVoiture[i].nbplaces,gtk_entry_get_text(add_nbp));
+      strcpy(TabVoiture[i].prixJour,gtk_entry_get_text(add_pj));
+      strcpy(TabVoiture[i].EnLocation,gtk_entry_get_text(add_enloc));
+    
+      break;
+
+    }
+
+}
+save_voitures();
+
+}
+Modif_voit(){
+
+GtkWidget *MSG3, *label14, *submit4,*msg_window3;
+GtkWidget *window_modif_voit;
+
+projet=GTK_WIDGET(gtk_builder_new_from_file("C:\\Users\\hp\\Desktop\\All_Windows.glade"));
+msg_window3=GTK_WIDGET(gtk_builder_get_object(projet, "msg_window3"));
+label14=GTK_WIDGET(gtk_builder_get_object(projet, "label14"));
+submit4=GTK_WIDGET(gtk_builder_get_object(projet, "submit4"));
+MSG3=GTK_WIDGET(gtk_builder_get_object(projet, "MSG3"));
+
+g_signal_connect(submit4,"clicked", G_CALLBACK(gtk_widget_destroy) , msg_window3);
+
+gtk_widget_show_all(msg_window3);
 
 
 
 
+}
 
+
+
+Supp_voit(){
+
+GtkWidget *MSG4, *label15, *submit5,*msg_window4;
+
+projet=GTK_WIDGET(gtk_builder_new_from_file("C:\\Users\\hp\\Desktop\\All_Windows.glade"));
+msg_window4=GTK_WIDGET(gtk_builder_get_object(projet, "msg_window4"));
+label15=GTK_WIDGET(gtk_builder_get_object(projet, "label15"));
+submit5=GTK_WIDGET(gtk_builder_get_object(projet, "submit5"));
+MSG4=GTK_WIDGET(gtk_builder_get_object(projet, "MSG4"));
+
+g_signal_connect(submit5,"clicked", G_CALLBACK(gtk_widget_destroy) , NULL);
+gtk_widget_show_all(msg_window4);
+
+load_voitures();
+for(i=0;i<10;i++){
+
+
+    if(TabVoiture[i].idVoiture==gtk_entry_get_text(MSG4)){
+      strcpy(TabVoiture[i].idVoiture," ");
+      strcpy(TabVoiture[i].marque," ");
+      strcpy(TabVoiture[i].nomVoiture," ");
+      strcpy(TabVoiture[i].couleur," ");
+      strcpy(TabVoiture[i].nbplaces," ");
+      strcpy(TabVoiture[i].prixJour," ");
+      strcpy(TabVoiture[i].EnLocation," ");
+    
+      break;
+
+    }
+
+}
+save_voitures();
 
 }
 
@@ -965,6 +1072,8 @@ void add_voit(){
 
 
 
-//1--Comment ecrire dans un label(transmettre le contenu du fichier en une fenetre)
-//1-Ajouter(a), 2-modifier(w), 3-supprimer(r+ et en utilisant les id des choses a supprimer)
-// Le CSS
+
+
+
+
+
